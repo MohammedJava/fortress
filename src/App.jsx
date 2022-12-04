@@ -6,6 +6,7 @@ import Home from "./Home/Home";
 import backgroundVideo from "./Assets/AdobeStock_Video2.mov";
 import Surveys from "./Surveys/Surveys";
 import Navbar from "./Navbar/Navbar";
+import Volunteer from "./Volunteer/Volunteer";
 
 const App = () => {
   const hello = "hello";
@@ -33,6 +34,7 @@ const App = () => {
         />
         <Introduction />
         <Surveys />
+        <Volunteer />
       </div>
     </div>
   );

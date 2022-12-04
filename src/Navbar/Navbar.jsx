@@ -51,8 +51,8 @@ const Menu = () => (
       </Link>
     </li>
     <li>
-      <Link className="link" to="Conclusion" spy smooth>
-        CONCLUSION
+      <Link className="link" to="Volunteer" spy smooth>
+        VOLUNTEER
       </Link>
     </li>
   </ul>
