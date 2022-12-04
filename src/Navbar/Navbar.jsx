@@ -6,53 +6,38 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 const Menu = () => (
   <ul style={{ listStyleType: "none" }}>
     <li>
-      <Link className="link" to="Abstract" spy smooth>
-        ABSTRACT
+      <Link className="link" to="Home" spy smooth>
+        Home
       </Link>
     </li>
     <li>
       <Link className="link" to="Introduction" spy smooth>
-        INTRODUCTION
+        Request Shelter
       </Link>
     </li>
     <li>
       <Link className="link" to="ProblemStatement" spy smooth>
-        PROBLEM STATEMENT
+        Volunteering
       </Link>
     </li>
     <li>
       <Link className="link" to="TheoreticalContribution" spy smooth>
-        THEORATICAL CONTRIBUTION
+        Activities
       </Link>
     </li>
     <li>
       <Link className="link" to="BackgroundResearch" spy smooth>
-        BACKGROUND RESEARCH
+        Newsletter
       </Link>
     </li>
     <li>
       <Link className="link" to="Methods" spy smooth>
-        METHODS
+        Login
       </Link>
     </li>
     <li>
       <Link className="link" to="Evaluation" spy smooth>
-        EVALUATION
-      </Link>
-    </li>
-    <li>
-      <Link className="link" to="Results" spy smooth>
-        RESULTS
-      </Link>
-    </li>
-    <li>
-      <Link className="link" to="Discussion" spy smooth>
-        DISCUSSION
-      </Link>
-    </li>
-    <li>
-      <Link className="link" to="Conclusion" spy smooth>
-        CONCLUSION
+        Sign Up
       </Link>
     </li>
   </ul>
