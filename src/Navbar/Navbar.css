@@ -1,0 +1,127 @@
+@font-face {
+  font-family: CaviarDreams;
+  src: url(../Assets/fonts/CaviarDreams.ttf);
+}
+
+.Navbar {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  position: fixed;
+  margin-top: 1%;
+  z-index: 20;
+  justify-content: center;
+  align-items: center;
+}
+
+.Navbar .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*Glass effect*/
+  background: white;
+  width: 70%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.065),
+    rgba(255, 255, 255, 0.065)
+  );
+  border-radius: 1rem;
+  backdrop-filter: blur(100rem);
+  z-index: 10;
+}
+
+.Navbar .content .linksContainer {
+  display: flex;
+  flex-direction: row;
+  flex-flow: column wrap;
+}
+
+.Navbar .content .linksContainer .link {
+  font-family: CaviarDreams;
+  font-size: 12px;
+}
+
+.Navbar .content .linksContainer > ul {
+  color: rgba(255, 255, 255, 0.26);
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+}
+
+.Navbar .content .linksContainer > ul > li:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.Navbar .content .navMenuContainer button {
+  padding: 2rem 4rem;
+}
+
+.Navbar .content .navMenu {
+  margin-left: 1rem;
+  display: none;
+  position: relative;
+}
+
+.Navbar .content .navMenuContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+
+  text-align: end;
+  background: var(--color-footer);
+  padding: 2rem;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  font-family: CaviarDreams;
+}
+
+@media screen and (max-width: 1050px) {
+  .Navbar .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*Glass effect*/
+    background: white;
+    width: 10%;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.065),
+      rgba(255, 255, 255, 0.065)
+    );
+    border-radius: 1rem;
+    backdrop-filter: blur(100rem);
+    z-index: 10;
+  }
+
+  .Navbar .content .linksContainer {
+    display: none;
+  }
+
+  .Navbar .content .navMenu {
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Navbar .content .navMenuContainer {
+    background: white;
+    width: 70%;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    );
+    border-radius: 1rem;
+    backdrop-filter: blur(100rem);
+    z-index: 10;
+  }
+}

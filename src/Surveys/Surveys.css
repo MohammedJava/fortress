@@ -1,0 +1,56 @@
+.Surveys {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.Surveys .content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  text-align: center;
+}
+
+.Surveys .content .inner {
+  margin: 5% 20% 0 20%;
+  padding: 8rem 1rem 1rem 1rem;
+}
+
+.Surveys .content .title {
+  color: var(--orange);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-family: "Vollkorn", serif;
+}
+
+.Surveys .content .subtitle {
+  color: (--black);
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Vollkorn", serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.Surveys .content .subtext {
+  color: (--black);
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Cairo", sans-serif;
+}
+
+#custom-grid {
+  display: grid;
+  color: (--black);
+  display: grid;
+
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+
+  row-gap: 0px;
+  height: 100%;
+}

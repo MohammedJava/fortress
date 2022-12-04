@@ -1,0 +1,69 @@
+.Introduction {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.Introduction #card {
+  box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
+  padding: 25px;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: black;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  border-left: 1px solid rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+  display: flex;
+}
+
+.Introduction #card:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transition: background-color 0.5s ease-out;
+}
+
+.Introduction .content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100vh;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  text-align: center;
+}
+
+.Introduction .content .inner {
+  margin: 5% 20% 0 20%;
+}
+
+.Introduction .content .inner .title {
+  color: var(--orange);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-family: "Vollkorn", sans-serif;
+}
+
+.Introduction .content .subtitle {
+  color: (--black);
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Vollkorn", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.Introduction .content .subtext {
+  color: (--black);
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Cairo", sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+}
