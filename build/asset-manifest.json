@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/nectar/static/css/main.9259287e.css",
+    "main.js": "/nectar/static/js/main.56dd1736.js",
+    "static/media/AdobeStock_Video2.mov": "/nectar/static/media/AdobeStock_Video2.63c5e050fff40c510987.mov",
+    "static/media/AdobeStock_Video1.mov": "/nectar/static/media/AdobeStock_Video1.9898dbaccc088c953e4a.mov",
+    "static/media/abnes.ttf": "/nectar/static/media/abnes.700eaa58b77df86f557c.ttf",
+    "static/media/CaviarDreams.ttf": "/nectar/static/media/CaviarDreams.174b0a13f7e49c169450.ttf",
+    "index.html": "/nectar/index.html",
+    "main.9259287e.css.map": "/nectar/static/css/main.9259287e.css.map",
+    "main.56dd1736.js.map": "/nectar/static/js/main.56dd1736.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9259287e.css",
+    "static/js/main.56dd1736.js"
+  ]
+}
