@@ -1,13 +1,13 @@
 import React from "react";
-import "./ProblemStatement.css";
+import "./Newsletter.css";
 import Tilt from "react-parallax-tilt";
 
-const ProblemStatement = () => (
-  <div className="ProblemStatement" id="ProblemStatement">
+const Background = () => (
+  <div className="Background" id="Background">
     {/*Nothing can be seen here, MUST USE CONTENT*/}
     <div className="content">
       <div className="inner">
-        <div className="title">ProblemStatement</div>
+        <div className="title">Newsletter</div>
         <div className="subtitle">Market Research</div>
         <Tilt tiltMaxAngleX={5} tiltMaxAngleY={5} gyroscope>
           <div id="card">
@@ -40,4 +40,4 @@ const ProblemStatement = () => (
   </div>
 );
 
-export default ProblemStatement;
+export default Background;

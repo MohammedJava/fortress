@@ -1,14 +1,13 @@
 import React from "react";
-import "./Introduction.css";
+import "./Volunteering.css";
 import Tilt from "react-parallax-tilt";
-import backgroundVideo from "../Assets/AdobeStock_Video2.mov";
 
-const Introduction = () => (
-  <div className="Introduction" id="Introduction">
+const Volunteering = () => (
+  <div className="Volunteering" id="Volunteering">
     {/*Nothing can be seen here, MUST USE CONTENT*/}
     <div className="content">
       <div className="inner">
-        <div className="title">INTRODUCTION</div>
+        <div className="title">Volunteering</div>
         <div className="subtitle">Market Research</div>
         <Tilt tiltMaxAngleX={5} tiltMaxAngleY={5} gyroscope>
           <div id="card">
@@ -41,4 +40,4 @@ const Introduction = () => (
   </div>
 );
 
-export default Introduction;
+export default Volunteering;

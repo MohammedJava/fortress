@@ -1,12 +1,11 @@
-/*Position is absolute so that introduction is on top of the background video*/
-.Introduction {
+.Background {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   position: absolute;
 }
 
-.Introduction #card {
+.Background #card {
   box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
   padding: 25px;
   padding-left: 10%;
@@ -24,29 +23,27 @@
   display: flex;
 }
 
-.Introduction #card:hover {
+.Background #card:hover {
   background: rgba(255, 255, 255, 0.5);
   transition: background-color 0.5s ease-out;
 }
 
-.Introduction .content {
+.Background .content {
+  position: absolute;
   display: flex;
   flex-direction: column;
+  margin-top: 100vh;
   width: 100%;
   height: 100%;
   top: 0;
   text-align: center;
-  padding: 1rem 1rem 1rem 1rem;
-
-  justify-content: center;
-  position: absolute;
 }
 
-.Introduction .content .inner {
-  margin: 6% 20% 0 20%;
+.Background .content .inner {
+  margin: 5% 20% 0 20%;
 }
 
-.Introduction .content .inner .title {
+.Background .content .inner .title {
   color: var(--orange);
   font-size: 2rem;
   font-weight: bold;
@@ -54,7 +51,7 @@
   font-family: "Vollkorn", sans-serif;
 }
 
-.Introduction .content .subtitle {
+.Background .content .subtitle {
   color: (--black);
   font-size: 1.2rem;
   font-weight: bold;
@@ -63,7 +60,7 @@
   margin-bottom: 20px;
 }
 
-.Introduction .content .subtext {
+.Background .content .subtext {
   color: (--black);
   font-size: 1.2rem;
   font-weight: bold;

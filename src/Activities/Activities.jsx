@@ -1,14 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import "./Surveys.css";
+import "./Activities.css";
 
-const Surveys = () => (
-  <div className="Surveys" id="Surveys">
+const Activities = () => (
+  <div className="Activities" id="Activities">
     {/*Nothing can be seen here, MUST USE CONTENT*/}
     <div className="content">
       <div className="inner">
-        <div className="title">Surveys Research</div>
-        <div className="subtitle">Surveys subtitle</div>
+        <div className="title">Activities</div>
+        <div className="subtitle">Activities</div>
         <div className="subtext">
           <p>
             To better understand our user base, we conducted a survey in which
@@ -74,4 +74,4 @@ const Surveys = () => (
   </div>
 );
 
-export default Surveys;
+export default Activities;

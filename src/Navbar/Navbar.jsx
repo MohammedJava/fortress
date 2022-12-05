@@ -11,32 +11,32 @@ const Menu = () => (
       </Link>
     </li>
     <li>
-      <Link className="link" to="Introduction" spy smooth>
+      <Link className="link" to="RequestShelter" spy smooth>
         Request Shelter
       </Link>
     </li>
     <li>
-      <Link className="link" to="ProblemStatement" spy smooth>
+      <Link className="link" to="Volunteering" spy smooth>
         Volunteering
       </Link>
     </li>
     <li>
-      <Link className="link" to="TheoreticalContribution" spy smooth>
+      <Link className="link" to="Activities" spy smooth>
         Activities
       </Link>
     </li>
     <li>
-      <Link className="link" to="BackgroundResearch" spy smooth>
+      <Link className="link" to="Newsletter" spy smooth>
         Newsletter
       </Link>
     </li>
     <li>
-      <Link className="link" to="Methods" spy smooth>
+      <Link className="link" to="Home" spy smooth>
         Login
       </Link>
     </li>
     <li>
-      <Link className="link" to="Evaluation" spy smooth>
+      <Link className="link" to="Home" spy smooth>
         Sign Up
       </Link>
     </li>

@@ -1,11 +1,11 @@
-.Surveys {
+.Activities {
   width: 100%;
   min-height: 100vh;
   display: flex;
   position: relative;
 }
 
-.Surveys .content {
+.Activities .content {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -14,12 +14,12 @@
   text-align: center;
 }
 
-.Surveys .content .inner {
+.Activities .content .inner {
   margin: 5% 20% 0 20%;
   padding: 8rem 1rem 1rem 1rem;
 }
 
-.Surveys .content .title {
+.Activities .content .title {
   color: var(--orange);
   font-size: 2rem;
   font-weight: bold;
@@ -27,7 +27,7 @@
   font-family: "Vollkorn", serif;
 }
 
-.Surveys .content .subtitle {
+.Activities .content .subtitle {
   color: (--black);
   font-size: 1.2rem;
   font-weight: bold;
@@ -36,7 +36,7 @@
   margin-bottom: 20px;
 }
 
-.Surveys .content .subtext {
+.Activities .content .subtext {
   color: (--black);
   font-size: 1.2rem;
   font-weight: bold;

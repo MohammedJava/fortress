@@ -1,13 +1,14 @@
 import React from "react";
-import "./Introduction.css";
+import "./RequestShelter.css";
 import Tilt from "react-parallax-tilt";
+import backgroundVideo from "../Assets/AdobeStock_Video2.mov";
 
-const Background = () => (
-  <div className="Background" id="Background">
+const RequestShelter = () => (
+  <div className="RequestShelter" id="RequestShelter">
     {/*Nothing can be seen here, MUST USE CONTENT*/}
     <div className="content">
       <div className="inner">
-        <div className="title">INTRODUCTION</div>
+        <div className="title">Request Shelter</div>
         <div className="subtitle">Market Research</div>
         <Tilt tiltMaxAngleX={5} tiltMaxAngleY={5} gyroscope>
           <div id="card">
@@ -40,4 +41,4 @@ const Background = () => (
   </div>
 );
 
-export default Background;
+export default RequestShelter;

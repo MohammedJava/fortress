@@ -1,10 +1,12 @@
-.Background {
+/*Position is absolute so that RequestShelter is on top of the background video*/
+.RequestShelter {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
+  position: absolute;
 }
 
-.Background #card {
+.RequestShelter #card {
   box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
   padding: 25px;
   padding-left: 10%;
@@ -22,27 +24,29 @@
   display: flex;
 }
 
-.Background #card:hover {
+.RequestShelter #card:hover {
   background: rgba(255, 255, 255, 0.5);
   transition: background-color 0.5s ease-out;
 }
 
-.Background .content {
-  position: absolute;
+.RequestShelter .content {
   display: flex;
   flex-direction: column;
-  margin-top: 100vh;
   width: 100%;
   height: 100%;
   top: 0;
   text-align: center;
+  padding: 1rem 1rem 1rem 1rem;
+
+  justify-content: center;
+  position: absolute;
 }
 
-.Background .content .inner {
-  margin: 5% 20% 0 20%;
+.RequestShelter .content .inner {
+  margin: 6% 20% 0 20%;
 }
 
-.Background .content .inner .title {
+.RequestShelter .content .inner .title {
   color: var(--orange);
   font-size: 2rem;
   font-weight: bold;
@@ -50,7 +54,7 @@
   font-family: "Vollkorn", sans-serif;
 }
 
-.Background .content .subtitle {
+.RequestShelter .content .subtitle {
   color: (--black);
   font-size: 1.2rem;
   font-weight: bold;
@@ -59,7 +63,7 @@
   margin-bottom: 20px;
 }
 
-.Background .content .subtext {
+.RequestShelter .content .subtext {
   color: (--black);
   font-size: 1.2rem;
   font-weight: bold;
