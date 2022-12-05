@@ -1,7 +1,6 @@
 import React from "react";
 import "./RequestShelter.css";
 import Tilt from "react-parallax-tilt";
-import backgroundVideo from "../Assets/AdobeStock_Video2.mov";
 
 const RequestShelter = () => (
   <div className="RequestShelter" id="RequestShelter">

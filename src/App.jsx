@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
 import Box from "@mui/material/Box";
-import RequestShelter from "./RequestShelter/RequestShelter";
 import Home from "./Home/Home";
 import backgroundVideo from "./Assets/AdobeStock_Video2.mov";
 import Volunteering from "./Volunteering/Volunteering";
 import Navbar from "./Navbar/Navbar";
+import Volunteer from "./Volunteer/Volunteer";
+import RequestShelter from "./RequestShelter/RequestShelter";
 
 const App = () => {
   const hello = "hello";
@@ -33,6 +34,7 @@ const App = () => {
         />
         <RequestShelter />
         <Volunteering />
+        <Volunteer />
       </div>
     </div>
   );
