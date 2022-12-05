@@ -7,7 +7,7 @@ const Volunteering = () => (
     {/*Nothing can be seen here, MUST USE CONTENT*/}
     <div className="content">
       <div className="inner">
-        <div className="title">Volunteering Research</div>
+        <div className="title">Volunteering help needed</div>
         <div className="subtitle">Volunteering subtitle</div>
         <div className="subtext">
           <p>

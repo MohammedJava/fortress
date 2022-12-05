@@ -54,3 +54,65 @@
   row-gap: 0px;
   height: 100%;
 }
+
+.labelStyle {
+  color: #FFF;
+  font-family: "Vollkorn", sans-serif;
+}
+p {
+  color: #FFF;
+  font-family: "Vollkorn", sans-serif;
+}
+
+#glass-btn {
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#glass-btn > button {
+  margin-top: 15px;
+  padding: 0.5em 2em;
+  font-family: CaviarDreams;
+  font-size: 1rem;
+  cursor: pointer;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.26);
+}
+
+#glass-btn > button,
+button::before,
+button::after {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 5px 0 rgba(255, 0, 119, 0.089);
+  backdrop-filter: blur(5.5px);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: 0.3s;
+}
+
+#glass-btn > button::before,
+button::after {
+  content: "";
+  position: absolute;
+  animation: float 4s infinite;
+}
+
+#glass-btn > button::before {
+  left: -0.7em;
+  bottom: -0.7em;
+  width: 1em;
+  height: 1em;
+  animation-delay: 0.5s;
+}
+
+#glass-btn > button::after {
+  right: -0.7em;
+  top: -0.7em;
+  width: 1.2em;
+  height: 1.2em;
+}
+
+#glass-btn > button:hover {
+  color: var(--orange);
+}

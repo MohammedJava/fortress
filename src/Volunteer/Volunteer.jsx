@@ -121,7 +121,7 @@ const Introduction = () => {
           <div className="subtitle">Currently Available Volunteer Position</div>
           <form className="" onSubmit={selectVolunteerType}>
             <div id="custom-grid">
-              <label htmlFor="input-garbage-collection">
+              <label htmlFor="input-garbage-collection" className="labelStyle">
                 Garbage Collection
                 <input
                   type="checkbox"
@@ -132,7 +132,7 @@ const Introduction = () => {
                   }
                 />
               </label>
-              <label htmlFor="input-shelter-maintenance">
+              <label htmlFor="input-shelter-maintenance" className="labelStyle">
                 Shelter Maintenance
                 <input
                   type="checkbox"
@@ -143,7 +143,7 @@ const Introduction = () => {
                   }
                 />
               </label>
-              <label htmlFor="input-goods-distribution">
+              <label htmlFor="input-goods-distribution" className="labelStyle">
                 Goods Distribution
                 <input
                   type="checkbox"
@@ -155,7 +155,9 @@ const Introduction = () => {
                 />
               </label>
             </div>
-            <input type="submit" value="Search" />
+            <div id="glass-btn">
+              <button type="submit">Search</button>
+            </div>
           </form>
           <div>
             {displayedJobs.map((job) => {
