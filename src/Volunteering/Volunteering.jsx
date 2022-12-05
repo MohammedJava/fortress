@@ -4,7 +4,7 @@ import "./Volunteering.css";
 
 const Volunteering = () => (
   <div className="Volunteering" id="Volunteering">
-    {/*Nothing can be seen here, MUST USE CONTENT*/}
+    {/*IMPORTANT - Nothing can be seen here, MUST USE CONTENT*/}
     <div className="content">
       <div className="inner">
         <div className="title">Volunteering Research</div>

@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
 import Box from "@mui/material/Box";
+import RequestShelter from "./RequestShelter/RequestShelter";
 import Home from "./Home/Home";
 import backgroundVideo from "./Assets/AdobeStock_Video2.mov";
 import Volunteering from "./Volunteering/Volunteering";
 import Navbar from "./Navbar/Navbar";
 import Volunteer from "./Volunteer/Volunteer";
-import RequestShelter from "./RequestShelter/RequestShelter";
 
 const App = () => {
   const hello = "hello";
@@ -23,18 +23,20 @@ const App = () => {
         }}
       />
       {/*Pages allows column display and background video*/}
-      <div className="pages">
-        <video
-          src={backgroundVideo}
-          autoPlay
-          loop
-          muted
-          playsInline
-          id="bVideo"
-        />
-        <RequestShelter />
-        <Volunteering />
-        <Volunteer />
+      <div id="flexRow">
+        <div className="pages">
+          <video
+            src={backgroundVideo}
+            autoPlay
+            loop
+            muted
+            playsInline
+            id="bVideo"
+          />
+          <RequestShelter />
+          <Volunteering />
+          <Volunteer />
+        </div>
       </div>
     </div>
   );
