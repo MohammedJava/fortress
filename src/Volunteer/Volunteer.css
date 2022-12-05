@@ -1,0 +1,56 @@
+.Volunteer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.Volunteer .content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  text-align: center;
+}
+
+.Volunteer .content .inner {
+  margin: 5% 5% 0 5%;
+  padding: 8rem 1rem 1rem 1rem;
+}
+
+.Volunteer .content .title {
+  color: var(--orange);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-family: "Vollkorn", serif;
+}
+
+.Volunteer .content .subtitle {
+  color: (--black);
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Vollkorn", serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.Volunteer .content .subtext {
+  color: (--black);
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Cairo", sans-serif;
+}
+
+#custom-grid {
+  display: grid;
+  color: (--black);
+  display: grid;
+
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+
+  row-gap: 0px;
+  height: 100%;
+}

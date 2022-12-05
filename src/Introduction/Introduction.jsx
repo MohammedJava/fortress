@@ -1,10 +1,9 @@
 import React from "react";
 import "./Introduction.css";
 import Tilt from "react-parallax-tilt";
-import backgroundVideo from "../Assets/AdobeStock_Video2.mov";
 
 const Introduction = () => (
-  <div className="Introduction" id="Introduction">
+  <div className="Introduction" id="Introduction" name="Introduction">
     {/*Nothing can be seen here, MUST USE CONTENT*/}
     <div className="content">
       <div className="inner">
