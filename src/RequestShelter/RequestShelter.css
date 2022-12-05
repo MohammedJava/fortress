@@ -1,12 +1,12 @@
-/*Position is absolute so that introduction is on top of the background video*/
-.Introduction {
+/*Position is absolute so that RequestShelter is on top of the background video*/
+.RequestShelter {
   width: 100%;
   min-height: 100vh;
   display: flex;
   position: absolute;
 }
 
-.Introduction #card {
+.RequestShelter #card {
   box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
   padding: 25px;
   padding-left: 10%;
@@ -24,12 +24,12 @@
   display: flex;
 }
 
-.Introduction #card:hover {
+.RequestShelter #card:hover {
   background: rgba(255, 255, 255, 0.5);
   transition: background-color 0.5s ease-out;
 }
 
-.Introduction .content {
+.RequestShelter .content {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -42,11 +42,11 @@
   position: absolute;
 }
 
-.Introduction .content .inner {
+.RequestShelter .content .inner {
   margin: 6% 20% 0 20%;
 }
 
-.Introduction .content .inner .title {
+.RequestShelter .content .inner .title {
   color: var(--orange);
   font-size: 2rem;
   font-weight: bold;
@@ -54,7 +54,7 @@
   font-family: "Vollkorn", sans-serif;
 }
 
-.Introduction .content .subtitle {
+.RequestShelter .content .subtitle {
   color: (--black);
   font-size: 1.2rem;
   font-weight: bold;
@@ -63,7 +63,7 @@
   margin-bottom: 20px;
 }
 
-.Introduction .content .subtext {
+.RequestShelter .content .subtext {
   color: (--black);
   font-size: 1.2rem;
   font-weight: bold;

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "./App.css";
 import Box from "@mui/material/Box";
-import Introduction from "./Introduction/Introduction";
+import RequestShelter from "./RequestShelter/RequestShelter";
 import Home from "./Home/Home";
 import backgroundVideo from "./Assets/AdobeStock_Video2.mov";
-import Surveys from "./Surveys/Surveys";
+import Volunteering from "./Volunteering/Volunteering";
 import Navbar from "./Navbar/Navbar";
 
 const App = () => {
@@ -31,8 +31,8 @@ const App = () => {
           playsInline
           id="bVideo"
         />
-        <Introduction />
-        <Surveys />
+        <RequestShelter />
+        <Volunteering />
       </div>
     </div>
   );

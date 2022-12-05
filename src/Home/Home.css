@@ -35,16 +35,16 @@
 
 .Home .content h1 {
   margin-left: 5%;
-  font-size: 50px;
+  font-size: 30px;
   margin-bottom: 0;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 600;
-  letter-spacing: 20px;
+  letter-spacing: 10px;
   font-family: abnes;
 }
 
 .Home .content h1:hover {
-  letter-spacing: 100px;
+  letter-spacing: 30px;
   transition: letter-spacing 0.2s ease-out;
 }
 

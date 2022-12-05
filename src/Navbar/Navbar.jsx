@@ -1,3 +1,4 @@
+/* eslint-disable react/button-has-type */
 import React from "react";
 import { Link } from "react-scroll";
 import "./Navbar.css";
@@ -11,33 +12,23 @@ const Menu = () => (
       </Link>
     </li>
     <li>
-      <Link className="link" to="Introduction" spy smooth>
+      <Link className="link" to="RequestShelter" spy smooth>
         Request Shelter
       </Link>
     </li>
     <li>
-      <Link className="link" to="ProblemStatement" spy smooth>
+      <Link className="link" to="Volunteering" spy smooth>
         Volunteering
       </Link>
     </li>
     <li>
-      <Link className="link" to="TheoreticalContribution" spy smooth>
+      <Link className="link" to="Activities" spy smooth>
         Activities
       </Link>
     </li>
     <li>
-      <Link className="link" to="BackgroundResearch" spy smooth>
+      <Link className="link" to="Newsletter" spy smooth>
         Newsletter
-      </Link>
-    </li>
-    <li>
-      <Link className="link" to="Methods" spy smooth>
-        Login
-      </Link>
-    </li>
-    <li>
-      <Link className="link" to="Evaluation" spy smooth>
-        Sign Up
       </Link>
     </li>
   </ul>
@@ -72,6 +63,12 @@ const Navbar = () => {
             </div>
           )}
         </div>
+      </div>
+      <div id="glass-btn">
+        <button>Log In</button>
+      </div>
+      <div id="glass-btn">
+        <button>SignUp</button>
       </div>
     </div>
   );
