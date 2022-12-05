@@ -1,3 +1,4 @@
+/* eslint-disable react/button-has-type */
 import React from "react";
 import { Link } from "react-scroll";
 import "./Navbar.css";
@@ -6,53 +7,28 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 const Menu = () => (
   <ul style={{ listStyleType: "none" }}>
     <li>
-      <Link className="link" to="Abstract" spy smooth>
-        ABSTRACT
+      <Link className="link" to="Home" spy smooth>
+        Home
       </Link>
     </li>
     <li>
-      <Link className="link" to="Introduction" spy smooth>
-        INTRODUCTION
+      <Link className="link" to="RequestShelter" spy smooth>
+        Request Shelter
       </Link>
     </li>
     <li>
-      <Link className="link" to="ProblemStatement" spy smooth>
-        PROBLEM STATEMENT
+      <Link className="link" to="Volunteering" spy smooth>
+        Volunteering
       </Link>
     </li>
     <li>
-      <Link className="link" to="TheoreticalContribution" spy smooth>
-        THEORATICAL CONTRIBUTION
+      <Link className="link" to="Activities" spy smooth>
+        Activities
       </Link>
     </li>
     <li>
-      <Link className="link" to="BackgroundResearch" spy smooth>
-        BACKGROUND RESEARCH
-      </Link>
-    </li>
-    <li>
-      <Link className="link" to="Methods" spy smooth>
-        METHODS
-      </Link>
-    </li>
-    <li>
-      <Link className="link" to="Evaluation" spy smooth>
-        EVALUATION
-      </Link>
-    </li>
-    <li>
-      <Link className="link" to="Results" spy smooth>
-        RESULTS
-      </Link>
-    </li>
-    <li>
-      <Link className="link" to="Discussion" spy smooth>
-        DISCUSSION
-      </Link>
-    </li>
-    <li>
-      <Link className="link" to="Volunteer" spy smooth>
-        VOLUNTEER
+      <Link className="link" to="Newsletter" spy smooth>
+        Newsletter
       </Link>
     </li>
   </ul>
@@ -87,6 +63,12 @@ const Navbar = () => {
             </div>
           )}
         </div>
+      </div>
+      <div id="glass-btn">
+        <button>Log In</button>
+      </div>
+      <div id="glass-btn">
+        <button>SignUp</button>
       </div>
     </div>
   );

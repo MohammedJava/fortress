@@ -18,7 +18,7 @@ const Home = () => (
         tiltReverse
         gyroscope
       >
-        <h1>FORTRESS</h1>
+        <h1>YouthShelter</h1>
       </Tilt>
 
       <h2>
