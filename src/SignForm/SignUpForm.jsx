@@ -28,14 +28,25 @@ const Copyright = (props) => (
 
 const theme = createTheme();
 
-const SignUpForm = ({ onClick }) => {
+const SignUpForm = ({ onClick, updateCurrentUser }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
+    const maxNum = 100000;
+    const randomId = Math.round(Math.random() * maxNum);
     const data = new FormData(event.currentTarget);
     console.log({
+      userId: randomId,
       email: data.get("email"),
       password: data.get("password"),
     });
+    updateCurrentUser({
+      userId: randomId,
+      lastName: data.get("lastName"),
+      firstName: data.get("firstName"),
+      email: data.get("email"),
+      isLoggedIn: true,
+    });
+    onClick();
   };
 
   return (
@@ -56,7 +67,12 @@ const SignUpForm = ({ onClick }) => {
           <Typography component="h1" variant="h5">
             Sign up
           </Typography>
-          <Box component="form" noValidate sx={{ mt: 3 }}>
+          <Box
+            component="form"
+            noValidate
+            sx={{ mt: 3 }}
+            onSubmit={handleSubmit}
+          >
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6}>
                 <TextField
@@ -113,7 +129,7 @@ const SignUpForm = ({ onClick }) => {
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
-              onClick={onClick}
+              type="submit"
             >
               Sign Up
             </Button>
