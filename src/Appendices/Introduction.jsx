@@ -4,7 +4,7 @@ import Tilt from "react-parallax-tilt";
 
 const Background = () => (
   <div className="Background" id="Background">
-    {/*Nothing can be seen here, MUST USE CONTENT*/}
+    {/*IMPORTANT - Nothing can be seen here, MUST USE CONTENT*/}
     <div className="content">
       <div className="inner">
         <div className="title">INTRODUCTION</div>

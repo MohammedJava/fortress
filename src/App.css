@@ -39,7 +39,7 @@
   position: sticky;
   object-fit: cover;
   top: 0;
-  z-index: 0;
+  z-index: -1;
 }
 
 .button {
@@ -139,4 +139,35 @@
   .section__margin {
     margin: 4rem 2rem;
   }
+}
+
+#GlassImageComponent {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 5px 0 rgba(255, 0, 119, 0.089);
+  backdrop-filter: blur(5.5px);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#flexRow {
+  display: flex;
+  flex-direction: column;
+}
+
+#signInCard {
+  box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
+  padding: 10px;
+  color: black;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  border-left: 1px solid rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }

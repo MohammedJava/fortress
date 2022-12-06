@@ -15,7 +15,7 @@
   position: fixed;
   margin-top: 1%;
   z-index: 20;
-  margin-left: 3%;
+  margin-left: 10%;
   justify-content: center;
   align-items: center;
 }
@@ -137,7 +137,7 @@
 
 #glass-btn {
   position: relative;
-  margin-left: 20px;
+  margin-left: 30px;
   margin-bottom: 20px;
 }
 
@@ -195,4 +195,22 @@ button::after {
   100% {
     transform: translateY(0);
   }
+}
+
+#signInCard {
+  box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
+  padding: 10px;
+  color: black;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  border-left: 1px solid rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }

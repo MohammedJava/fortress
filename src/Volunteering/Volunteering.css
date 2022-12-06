@@ -3,6 +3,8 @@
   min-height: 100vh;
   display: flex;
   position: relative;
+  /*IMPORTANT - Use margin-top to move pages*/
+  margin-top: 120vh;
 }
 
 .Volunteering .content {
@@ -12,6 +14,7 @@
   height: 100%;
   top: 0;
   text-align: center;
+  position: relative;
 }
 
 .Volunteering .content .inner {
@@ -48,7 +51,6 @@
   color: (--black);
   display: grid;
 
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
 
   row-gap: 0px;
