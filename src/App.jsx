@@ -7,6 +7,7 @@ import backgroundVideo from "./Assets/AdobeStock_Video2.mov";
 import Volunteering from "./Volunteering/Volunteering";
 import Navbar from "./Navbar/Navbar";
 import Volunteer from "./Volunteer/Volunteer";
+import SignInForm from "./SignForm/SignInForm";
 
 const App = () => {
   const hello = "hello";

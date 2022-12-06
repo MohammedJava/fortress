@@ -9,6 +9,7 @@ import mainVideo from "../Assets/AdobeStock_Video1.mov";
 import MultipleTilt from "./MultiTiltComponent/MultiTiltComponent";
 import GlassImageComponent from "../GlassImageComponent/GlassImageComponent";
 import image2 from "../Assets/Images/pexels-lisa-fotios-homes.jpg";
+import logo from "../Assets/Images/logo_fromVistaPrintAlphaBackground.png";
 
 const Home = () => {
   const image = "pexels-lisa-fotios-homes.jpg";
@@ -26,16 +27,34 @@ const Home = () => {
         tiltReverse
         gyroscope
 >*/}
+
+        <img
+          src={logo}
+          alt=""
+          style={{
+            marginLeft: "20px",
+            width: "150px",
+            position: "absolute",
+            opacity: "0.5",
+          }}
+        />
         <h1>YouthShelter</h1>
 
         {/*Higher Card*/}
-        {/*Replace all widths*/}
+        {/*IMPORTANT - Replace all widths*/}
         <div
-          style={{ marginLeft: "65%", width: "520px", position: "absolute" }}
+          style={{
+            marginLeft: "65%",
+            marginTop: "200px",
+            width: "520px",
+            position: "absolute",
+          }}
         >
           <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} id="tilt-img1">
             <div id="GlassImageComponent">
-              <h3 style={{ margin: 0, paddingLeft: "2px" }}>A title</h3>
+              <h3 style={{ margin: 0, paddingLeft: "2px", opacity: "0.8" }}>
+                A title
+              </h3>
               <img
                 src={image2}
                 alt=""
@@ -46,13 +65,13 @@ const Home = () => {
         </div>
 
         {/*Lower Card*/}
-        {/*Replace all widths*/}
+        {/*IMPORTANT - Replace all widths*/}
         <div
           style={{
-            marginLeft: "55%",
+            marginLeft: "61%",
             width: "520px",
             position: "absolute",
-            marginTop: "140px",
+            marginTop: "300px",
           }}
         >
           <Tilt
@@ -62,7 +81,9 @@ const Home = () => {
             tiltAngleYInitial={10}
           >
             <div id="GlassImageComponent">
-              <h3 style={{ margin: 0, paddingLeft: "2px" }}>Another title</h3>
+              <h3 style={{ margin: 0, paddingLeft: "2px", opacity: "0.8" }}>
+                Another title
+              </h3>
               <img
                 src={image2}
                 alt=""
@@ -95,8 +116,13 @@ const Home = () => {
           help our youth overcome such challenges. Help us offer the hope of a
           better future to those who build tomorrow's world.
         </h3>
-        <div id="joinButton">
-          <button>Join Us</button>
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <div id="joinButton">
+            <button>Join Us</button>
+          </div>
+          <div id="joinButton">
+            <button>Learn More</button>
+          </div>
         </div>
       </div>
     </div>

@@ -3,6 +3,9 @@ import React from "react";
 import { Link } from "react-scroll";
 import "./Navbar.css";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import Dialog from "@mui/material/Dialog";
+import SignInForm from "../SignForm/SignInForm";
+import SignUpForm from "../SignForm/SignUpForm";
 
 const Menu = () => (
   <ul style={{ listStyleType: "none" }}>
@@ -36,6 +39,25 @@ const Menu = () => (
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const [open2, setOpen2] = React.useState(false);
+
+  const handleClickOpen2 = () => {
+    setOpen2(true);
+  };
+
+  const handleClose2 = () => {
+    setOpen2(false);
+  };
 
   return (
     <div className="Navbar">
@@ -65,11 +87,17 @@ const Navbar = () => {
         </div>
       </div>
       <div id="glass-btn">
-        <button>Log In</button>
+        <button onClick={handleClickOpen}>Log In</button>
       </div>
       <div id="glass-btn">
-        <button>SignUp</button>
+        <button onClick={handleClickOpen2}>SignUp</button>
       </div>
+      <Dialog open={open} onClose={handleClose}>
+        <SignInForm onClick={handleClose} />
+      </Dialog>
+      <Dialog open={open2} onClose={handleClose2}>
+        <SignUpForm onClick={handleClose2} />
+      </Dialog>
     </div>
   );
 };

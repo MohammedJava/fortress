@@ -21,7 +21,7 @@
 }
 
 .Home .content {
-  padding: 10rem 0rem 10rem 0rem;
+  padding: 0rem 0rem 10rem 0rem;
   text-align: left;
   font-family: "Poppins", sans-serif;
   position: absolute;
@@ -36,21 +36,23 @@
 
 .Home .content h1 {
   padding-left: 2rem;
-  font-size: 35px;
+  font-size: 25px;
   margin-bottom: 0;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 600;
   letter-spacing: 10px;
+  text-transform: uppercase;
   font-family: abnes;
+  margin-top: 250px;
 }
 
 .Home .content h1:hover {
-  letter-spacing: 23px;
+  letter-spacing: 5px;
   transition: letter-spacing 0.15s ease-out;
 }
 
 .Home .content h1:not(:hover) {
-  letter-spacing: 20px;
+  letter-spacing: 3px;
   transition: letter-spacing 0.15s ease-in;
 }
 
@@ -61,6 +63,7 @@
   font-size: 18px;
   color: rgba(255, 255, 255, 1);
   font-weight: 600;
+  margin-bottom: 40px;
 }
 
 .Home .content h3 {
@@ -72,6 +75,7 @@
   font-weight: 200;
   text-align: justify;
   text-justify: inter-word;
+  margin-bottom: 80px;
 }
 
 .Home .content h2:hover {
@@ -113,7 +117,7 @@
 }
 
 #platformDescription {
-  width: 40%;
+  width: 38%;
 }
 
 #joinButton {
@@ -125,7 +129,7 @@
 #joinButton > button {
   padding: 0.5em 2em;
   font-family: CaviarDreams;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   cursor: pointer;
   letter-spacing: 2px;
   color: rgba(255, 255, 255, 0.26);
