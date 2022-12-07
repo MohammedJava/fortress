@@ -15,6 +15,7 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { useState } from "react";
 
 const Copyright = (props) => (
   <Typography variant="body2" color="text.secondary" align="center" {...props}>
@@ -28,16 +29,31 @@ const Copyright = (props) => (
 
 const theme = createTheme();
 
-const SignUpForm = ({ onClick }) => {
+const SignUpForm = ({ onClick, updateCurrentUser }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
+    const maxNum = 100000;
+    const randomId = Math.round(Math.random() * maxNum);
     const data = new FormData(event.currentTarget);
     console.log({
+      userId: randomId,
       email: data.get("email"),
       password: data.get("password"),
     });
+    updateCurrentUser({
+      userId: randomId,
+      lastName: data.get("lastName"),
+      firstName: data.get("firstName"),
+      email: data.get("email"),
+      isLoggedIn: true,
+    });
+    onClick();
   };
 
+  const [isBot, setIsBot] = useState(true);
+  const updateIsBot = (e) => {
+    setIsBot(!e.target.checked);
+  };
   return (
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
@@ -54,9 +70,14 @@ const SignUpForm = ({ onClick }) => {
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Sign up
+            Apply for a FREE Membership
           </Typography>
-          <Box component="form" noValidate sx={{ mt: 3 }}>
+          <Box
+            component="form"
+            noValidate
+            sx={{ mt: 3 }}
+            onSubmit={handleSubmit}
+          >
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6}>
                 <TextField
@@ -103,9 +124,13 @@ const SignUpForm = ({ onClick }) => {
               <Grid item xs={12}>
                 <FormControlLabel
                   control={
-                    <Checkbox value="allowExtraEmails" color="primary" />
+                    <Checkbox
+                      value="notARobot"
+                      color="primary"
+                      onChange={updateIsBot}
+                    />
                   }
-                  label="I want to receive inspiration, marketing promotions and updates via email."
+                  label="I am not a robot"
                 />
               </Grid>
             </Grid>
@@ -113,9 +138,10 @@ const SignUpForm = ({ onClick }) => {
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
-              onClick={onClick}
+              type="submit"
+              disabled={isBot}
             >
-              Sign Up
+              Apply
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
