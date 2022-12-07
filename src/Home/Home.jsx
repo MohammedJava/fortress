@@ -10,6 +10,8 @@ import MultipleTilt from "./MultiTiltComponent/MultiTiltComponent";
 import GlassImageComponent from "../GlassImageComponent/GlassImageComponent";
 import image2 from "../Assets/Images/pexels-lisa-fotios-homes.jpg";
 import logo from "../Assets/Images/logo_fromVistaPrintAlphaBackground.png";
+import counseling from "../Assets/Images/counselor-listens-compassionately.png";
+import office from "../Assets/Images/homework_room_youth_without_shelter.webp";
 
 const Home = () => {
   const image = "pexels-lisa-fotios-homes.jpg";
@@ -53,10 +55,10 @@ const Home = () => {
           <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} id="tilt-img1">
             <div id="GlassImageComponent">
               <h3 style={{ margin: 0, paddingLeft: "2px", opacity: "0.8" }}>
-                A title
+                Our offices
               </h3>
               <img
-                src={image2}
+                src={office}
                 alt=""
                 style={{ width: "520px", paddingTop: "10px" }}
               />
@@ -71,7 +73,7 @@ const Home = () => {
             marginLeft: "61%",
             width: "520px",
             position: "absolute",
-            marginTop: "300px",
+            marginTop: "400px",
           }}
         >
           <Tilt
@@ -82,10 +84,10 @@ const Home = () => {
           >
             <div id="GlassImageComponent">
               <h3 style={{ margin: 0, paddingLeft: "2px", opacity: "0.8" }}>
-                Another title
+                Therapy sessions
               </h3>
               <img
-                src={image2}
+                src={counseling}
                 alt=""
                 style={{ width: "520px", paddingTop: "10px" }}
               />
