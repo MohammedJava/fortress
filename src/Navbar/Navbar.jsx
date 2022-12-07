@@ -5,6 +5,9 @@ import "./Navbar.css";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import Dialog from "@mui/material/Dialog";
 import Typography from "@mui/material/Typography";
+import Alert from "@mui/material/Alert";
+import AlertTitle from "@mui/material/AlertTitle";
+import Snackbar from "@mui/material/Snackbar";
 import SignInForm from "../SignForm/SignInForm";
 import SignUpForm from "../SignForm/SignUpForm";
 
@@ -41,6 +44,18 @@ const Menu = () => (
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
   const [open, setOpen] = React.useState(false);
+  const [openAlert, setOpenAlert] = React.useState(true);
+  const handleClickAlert = () => {
+    setOpenAlert(true);
+  };
+
+  const handleCloseAlert = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpenAlert(false);
+  };
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -105,13 +120,13 @@ const Navbar = () => {
       </div>
       <div id="glass-btn">
         <button onClick={currentUser.isLoggedIn ? logOut : handleClickOpen}>
-          {currentUser.isLoggedIn ? "Log Out" : "Log In"}
+          {currentUser.isLoggedIn ? "Logout" : "Log In"}
         </button>
       </div>
       <div id="glass-btn">
         {currentUser.isLoggedIn ? (
           <Typography component="h3" variant="h5">
-            Hello {currentUser.firstName}
+            Hello {currentUser.firstName} <br /> Membership pending...
           </Typography>
         ) : (
           <button onClick={handleClickOpen2}>Become Member</button>
@@ -126,6 +141,26 @@ const Navbar = () => {
           updateCurrentUser={updateCurrentUser}
         />
       </Dialog>
+      {currentUser.isLoggedIn && (
+        <div style={{ position: "absolute", marginTop: "80%" }}>
+          <Snackbar
+            open={openAlert}
+            autoHideDuration={6000}
+            onClose={handleCloseAlert}
+            message="Note archived"
+          >
+            <Alert
+              onClose={handleCloseAlert}
+              severity="success"
+              sx={{ width: "100%" }}
+            >
+              <AlertTitle>Success</AlertTitle>
+              User created successfully (ID: 51256489) —
+              <strong>Membership application sent!</strong>
+            </Alert>
+          </Snackbar>
+        </div>
+      )}
     </div>
   );
 };
