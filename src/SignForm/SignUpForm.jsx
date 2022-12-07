@@ -15,6 +15,7 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { useState } from "react";
 
 const Copyright = (props) => (
   <Typography variant="body2" color="text.secondary" align="center" {...props}>
@@ -49,6 +50,10 @@ const SignUpForm = ({ onClick, updateCurrentUser }) => {
     onClick();
   };
 
+  const [isBot, setIsBot] = useState(true);
+  const updateIsBot = (e) => {
+    setIsBot(!e.target.checked);
+  };
   return (
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
@@ -65,7 +70,7 @@ const SignUpForm = ({ onClick, updateCurrentUser }) => {
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Sign up
+            Apply for a FREE Membership
           </Typography>
           <Box
             component="form"
@@ -119,9 +124,13 @@ const SignUpForm = ({ onClick, updateCurrentUser }) => {
               <Grid item xs={12}>
                 <FormControlLabel
                   control={
-                    <Checkbox value="allowExtraEmails" color="primary" />
+                    <Checkbox
+                      value="notARobot"
+                      color="primary"
+                      onChange={updateIsBot}
+                    />
                   }
-                  label="I want to receive inspiration, marketing promotions and updates via email."
+                  label="I am not a robot"
                 />
               </Grid>
             </Grid>
@@ -130,8 +139,9 @@ const SignUpForm = ({ onClick, updateCurrentUser }) => {
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
               type="submit"
+              disabled={isBot}
             >
-              Sign Up
+              Apply
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>

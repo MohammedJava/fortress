@@ -188,7 +188,7 @@ button::after {
   color: var(--orange);
 }
 
-#glass-btn > p {
+#glass-btn > h3 {
   color: white;
 }
 

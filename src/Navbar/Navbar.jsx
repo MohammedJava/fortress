@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import "./Navbar.css";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import Dialog from "@mui/material/Dialog";
+import Typography from "@mui/material/Typography";
 import SignInForm from "../SignForm/SignInForm";
 import SignUpForm from "../SignForm/SignUpForm";
 
@@ -71,6 +72,10 @@ const Navbar = () => {
     setCurrentUser(newUser);
   };
 
+  const logOut = () => {
+    setCurrentUser({ ...currentUser, isLoggedIn: false });
+  };
+
   return (
     <div className="Navbar">
       <div className="content">
@@ -99,15 +104,17 @@ const Navbar = () => {
         </div>
       </div>
       <div id="glass-btn">
-        <button onClick={handleClickOpen}>
+        <button onClick={currentUser.isLoggedIn ? logOut : handleClickOpen}>
           {currentUser.isLoggedIn ? "Log Out" : "Log In"}
         </button>
       </div>
       <div id="glass-btn">
         {currentUser.isLoggedIn ? (
-          <p>Hello {currentUser.firstName}</p>
+          <Typography component="h3" variant="h5">
+            Hello {currentUser.firstName}
+          </Typography>
         ) : (
-          <button onClick={handleClickOpen2}>SignUp</button>
+          <button onClick={handleClickOpen2}>Become Member</button>
         )}
       </div>
       <Dialog open={open} onClose={handleClose}>
