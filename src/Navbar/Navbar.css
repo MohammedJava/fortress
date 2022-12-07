@@ -188,6 +188,10 @@ button::after {
   color: var(--orange);
 }
 
+#glass-btn > h3 {
+  color: white;
+}
+
 @keyframes float {
   50% {
     transform: translateY(-0.5em);

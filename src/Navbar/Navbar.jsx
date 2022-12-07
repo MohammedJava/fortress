@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import "./Navbar.css";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import Dialog from "@mui/material/Dialog";
+import Typography from "@mui/material/Typography";
 import SignInForm from "../SignForm/SignInForm";
 import SignUpForm from "../SignForm/SignUpForm";
 
@@ -59,6 +60,22 @@ const Navbar = () => {
     setOpen2(false);
   };
 
+  const [currentUser, setCurrentUser] = React.useState({
+    userId: 0,
+    firstName: "Alice",
+    lastName: "Bob",
+    email: "AB@Gmail.com",
+    isLoggedIn: false,
+  });
+
+  const updateCurrentUser = (newUser) => {
+    setCurrentUser(newUser);
+  };
+
+  const logOut = () => {
+    setCurrentUser({ ...currentUser, isLoggedIn: false });
+  };
+
   return (
     <div className="Navbar">
       <div className="content">
@@ -87,16 +104,27 @@ const Navbar = () => {
         </div>
       </div>
       <div id="glass-btn">
-        <button onClick={handleClickOpen}>Log In</button>
+        <button onClick={currentUser.isLoggedIn ? logOut : handleClickOpen}>
+          {currentUser.isLoggedIn ? "Log Out" : "Log In"}
+        </button>
       </div>
       <div id="glass-btn">
-        <button onClick={handleClickOpen2}>SignUp</button>
+        {currentUser.isLoggedIn ? (
+          <Typography component="h3" variant="h5">
+            Hello {currentUser.firstName}
+          </Typography>
+        ) : (
+          <button onClick={handleClickOpen2}>Become Member</button>
+        )}
       </div>
       <Dialog open={open} onClose={handleClose}>
         <SignInForm onClick={handleClose} />
       </Dialog>
       <Dialog open={open2} onClose={handleClose2}>
-        <SignUpForm onClick={handleClose2} />
+        <SignUpForm
+          onClick={handleClose2}
+          updateCurrentUser={updateCurrentUser}
+        />
       </Dialog>
     </div>
   );
